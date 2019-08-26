@@ -6,4 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  showRecipes = true;
+  showShoppingList = false;
+
+  onViewChange(event: { recipe: boolean, shopping: boolean }) {
+    console.log(event);
+    this.showRecipes = event.recipe;
+    this.showShoppingList = event.shopping;
+  }
 }
