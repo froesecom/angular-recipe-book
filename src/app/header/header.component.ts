@@ -16,12 +16,10 @@ export class HeaderComponent implements OnInit {
   }
 
   showRecipeView() {
-    console.log('show recipe');
     this.viewDisplay.emit({recipe: true, shopping: false});
   }
 
   showShoppingView() {
-    console.log('show shopping');
     this.viewDisplay.emit({recipe: false, shopping: true});
   }
 
